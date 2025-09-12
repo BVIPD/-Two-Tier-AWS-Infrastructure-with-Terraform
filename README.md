@@ -1,2 +1,11 @@
 # -Two-Tier-AWS-Infrastructure-with-Terraform
 Automating the deployment of a secure, scalable two-tier AWS infrastructure using Terraform (Infrastructure as Code).
+
+
+This project demonstrates the deployment of a secure, scalable, and highly available two-tier architecture on AWS using Terraform for Infrastructure as Code (IaC). The goal is to automate the entire cloud infrastructure setup while following modular design principles and security best practices, making it easy to manage, replicate, and maintain across different environments. By separating the application and database layers, the architecture ensures better performance, improved security, and simplified maintenance.
+
+The infrastructure is fully automated using Terraform modules, enabling reusable and well-organized code. It integrates multiple AWS services to deliver a production-ready environment. Networking and security are handled through a dedicated Virtual Private Cloud (VPC) with public and private subnets, strict IAM roles and policies for fine-grained access control, and AWS Web Application Firewall (WAF) for protection against common web threats. Compute and scaling needs are addressed by using Auto Scaling Groups with EC2 instances behind an Application Load Balancer (ALB), ensuring that the application can handle traffic spikes while maintaining high availability and reliability.
+
+For the data layer, the project provisions Amazon RDS, a fully managed relational database service that provides automated backups, fault tolerance, and easy scaling. Static files and application assets can be stored securely in Amazon S3 buckets, offering durability and cost-effective storage. To enhance networking and optimization, the setup uses Amazon Route 53 for scalable and reliable DNS management and Amazon CloudFront as a global content delivery network (CDN) for low-latency content distribution. End-to-end encryption is implemented with AWS Certificate Manager (ACM) to enable SSL/TLS security for all communications.
+
+This two-tier AWS infrastructure is ideal for deploying modern web applications and enterprise workloads. With Terraform as the backbone, it delivers Infrastructure as Code automation, scalability, high availability, and robust security, making it a strong and maintainable foundation for cloud-native applications.
