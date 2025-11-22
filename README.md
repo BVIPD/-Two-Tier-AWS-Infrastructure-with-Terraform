@@ -1,6 +1,6 @@
-# -Two-Tier-AWS-Infrastructure-with-Terraform
+# Two-Tier-AWS-Infrastructure-with-Terraform
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates the automated deployment of a secure, scalable, and modular two-tier architecture on AWS using Terraform. All Terraform commands, modules, and infrastructure provisioning were executed completely inside **Google Colab**, making the project portable, cloud-based, and easy to reproduce.
 
@@ -13,7 +13,7 @@ The architecture consists of:
 
 ---
 
-## 🏗️ Architecture Diagram (Conceptual)
+##  Architecture Diagram (Conceptual)
 
 ```
              ┌──────────────────────────────┐
@@ -39,7 +39,7 @@ The architecture consists of:
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 
 * **Infrastructure as Code (IaC)** using Terraform
 * **Google Colab execution** for all Terraform operations
@@ -59,7 +59,7 @@ The architecture consists of:
 
 
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 aws_two_tier/
@@ -86,57 +86,9 @@ aws_two_tier/
 
 
 
-## 🧠 How to Run in Google Colab
-
-### 1️⃣ Install Terraform
-
-```bash
-!apt-get install unzip -y
-!wget https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip
-!unzip terraform_1.7.5_linux_amd64.zip
-!mv terraform /usr/local/bin/
-!terraform -version
-```
-
-### 2️⃣ Create Project Folders
-
-```bash
-!mkdir -p aws_two_tier/modules/{vpc,ec2,rds}
-%cd aws_two_tier
-```
-
-### 3️⃣ Add Terraform Files
-
-Paste the provided **main.tf**, **modules**, and variables exactly as in your project.
-
-### 4️⃣ Initialize Terraform
-
-```bash
-!terraform init
-```
-
-### 5️⃣ Validate Configuration
-
-```bash
-!terraform validate
-```
-
-### 6️⃣ Optional: View Execution Plan
-
-```bash
-!terraform plan -no-color
-```
-
-### 7️⃣ Optional: Apply the Infrastructure
-
-Requires AWS credentials:
-
-```bash
-!terraform apply -auto-approve
-```
 
 
-## 📊 Outputs After Deployment
+##  Outputs After Deployment
 
 Terraform automatically prints:
 
@@ -147,7 +99,7 @@ These values can be used for testing or connecting applications.
 
 
 
-## 📚 Technologies Used
+##  Technologies Used
 
 * **Terraform** (IaC tool)
 * **AWS Services**: VPC, EC2, RDS
@@ -156,7 +108,7 @@ These values can be used for testing or connecting applications.
 
 
 
-## 🧪 Results
+##  Results
 
 * Terraform successfully initialized and validated in Google Colab
 * Modules executed correctly
@@ -166,7 +118,7 @@ These values can be used for testing or connecting applications.
 
 
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Add **Security Groups**
 * Integrate **Application Load Balancer**
@@ -176,7 +128,7 @@ These values can be used for testing or connecting applications.
 * Convert architecture to **3-tier** or migrate to **ECS/EKS**
 
 
-## 📄 References
+##  References
 
 * Terraform Docs: [https://developer.hashicorp.com/terraform/docs](https://developer.hashicorp.com/terraform/docs)
 * AWS Docs: [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/)
